@@ -311,4 +311,4 @@ _SYSTEM_PROMPT = (
 
 ---
 
-> 源码路径：`~/IdeaProjects/mem0-source/mem0/memory/main.py`（`_search_vector_store` 方法）
+> 源码路径：mem0 源码 `mem0/memory/main.py`（`_search_vector_store` 方法，可在 mem0 官方仓库查阅）

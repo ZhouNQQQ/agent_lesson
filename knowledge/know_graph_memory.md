@@ -63,8 +63,3 @@
 - 向量检索延迟：毫秒级
 - 图遍历延迟：毫秒~秒级（取决于跳数和图规模）
 - 混合方案检索链路：3 段（向量海选 → 图精筛 → 语义精排）
-
----
-
-*产出物：`reports/know_graph_memory.md`*
-*学习资料：`reports/know_graph_memory_study.md`*

@@ -1,8 +1,4 @@
-# K.3 Compaction + 时间衰减策略（口述通过）
-
-> 口述时间：2026-06-14  
-> 口述人：ZhouNQQQ  
-> 状态：✅ 通过
+# K.3 Compaction + 时间衰减策略
 
 ---
 
@@ -62,9 +58,3 @@ for mem in candidates:
 
 # 失败重跑时：已标记的跳过，未标记的继续处理
 ```
-
----
-
-## 产出物
-
-- 学习资料：`materials/04_compaction_decay.md`（已整理，含 mem0 真实结构调查、三种触发时机、两种衰减公式、与 Background Review 的关系）
