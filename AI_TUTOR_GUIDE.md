@@ -46,12 +46,14 @@
 
 **P1（进门后决定薪资）**
 4. 记忆系统讲透：CQRS、Rolling Summary、Graph、Reranker、Compaction（`knowledge/know_*` + `lessons/03_memory` + `lessons/mem0-deep-reading`）。
-5. 安全：Prompt Injection 防御、越狱、HITL 审批时机。
-6. 系统设计大题：多 Agent 协作 / RAG 系统 / 可观测性。
-7. 评估体系：离线/在线/LLM-as-Judge + RAG 的 Recall@K / Faithfulness。
+5. 评测与可观测性：三支柱（离线/在线/LLM-as-Judge）、分层指标（检索 Recall@K / 生成 Faithfulness / Agent 任务成功率）、trace/span、badcase 闭环（`lessons/05_evaluation/` + `knowledge/know_evaluation.md`、`know_observability.md` + `drills/05`）。
+6. MCP 与工具编排：三原语、三角色、运行时发现、MCP vs FC（`lessons/06_mcp/` + `knowledge/know_mcp.md`）。
+7. 工程化（Harness/可靠性）：长任务状态持久化与恢复、重试/降级/熔断、成本性能、多模型路由（`lessons/07_engineering/` + `knowledge/know_cost_reliability.md`、`know_model_routing.md` + `drills/06/07`）。
+8. 安全：直接/间接 Prompt Injection 防御、越狱、沙箱、权限审计、HITL 审批时机（`lessons/08_security/` + `knowledge/know_agent_security.md`）。
+9. 系统设计大题：多 Agent 协作 / RAG 系统 / 研发流水线（`lessons/curriculum/`）。
 
 **P2（锦上添花）**
-8. Prompt 工程体系化、流式输出、成本优化。
+10. Prompt 工程体系化、流式输出、成本优化。
 
 ## 五、配套 AI 技能（开课前建议先装）
 

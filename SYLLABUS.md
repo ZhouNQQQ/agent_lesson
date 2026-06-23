@@ -75,13 +75,47 @@
 
 ---
 
+## 模块 9 · 评测与可观测性（P1 · 真实 JD 硬要求 · 原课程最大缺口）
+- **目标**：讲清 Agent 为何必须评测、评测三支柱、分层指标（检索/生成/Agent）、LLM-as-Judge 及其偏差、trace/span 埋点、badcase 闭环、评测接 CI/CD。
+- **材料**：`lessons/05_evaluation/eval_observability_lesson.md`
+- **知识卡**：`knowledge/know_evaluation.md`、`knowledge/know_observability.md`
+- **配套手撕**：`drills/05_llm_as_judge.py`（pairwise + 位置消偏）
+- **缺口来源**：JD3 全栈 AI-Native、JD4 开发工程师、JD6/JD7 平台架构师反复要求"评测/trace/eval/badcase/回归"。
+
+## 模块 10 · MCP 协议与工具编排（P1 · 深圳/北京 JD 要求 · 热点）
+- **目标**：讲清 MCP 是什么、三原语（Tools/Resources/Prompts）、三角色（Host/Client/Server）、运行时发现、传输层、MCP vs Function Calling、工具编排模式。
+- **材料**：`lessons/06_mcp/mcp_lesson.md`
+- **知识卡**：`knowledge/know_mcp.md`
+- **配套手撕**：`drills/02_tool_router.py`（工具检索）
+- **缺口来源**：深圳 JD "MCP 管理"、北京火山引擎 JD "Skill/MCP/Memory Infra 组件"。
+
+## 模块 11 · Agent 工程化（P1 · 决定能否接平台架构岗）
+- **目标**：讲清 Agent Harness、运行时编排与长任务状态管理（持久化/恢复/补偿）、可靠性三件套（重试/降级/熔断、fail-open/closed）、成本与性能优化、多模型路由、研发流水线。
+- **材料**：`lessons/07_engineering/engineering_lesson.md`
+- **知识卡**：`knowledge/know_cost_reliability.md`、`knowledge/know_model_routing.md`
+- **配套手撕**：`drills/06_model_router.py`（级联路由）、`drills/07_retry_fallback.py`（重试+降级+熔断）
+- **缺口来源**：JD4 "Harness/长任务调度/成本性能可靠性"、JD6/JD7 "运行时编排/多模型协同/状态持久化/故障恢复"。
+
+## 模块 12 · Agent 安全（P1 · 必问）
+- **目标**：讲清 Agent 攻击面、直接/间接 Prompt Injection 与防御、越狱、沙箱隔离、权限最小化与审计、HITL 审批时机、输出安全。
+- **材料**：`lessons/08_security/security_lesson.md`
+- **知识卡**：`knowledge/know_agent_security.md`
+- **缺口来源**：深圳 JD "Agent 安全控制"、JD6 "权限/审计/人机协作"。
+
+---
+
 ## 推荐学习顺序（按 ROI）
 
 ```
-入场券(必过)        加分项(决定薪资)         锦上添花
-模块1 ReAct         模块3 记忆系统(深)        模块4 框架横向
-模块2 RAG     →     模块5 多Agent/系统设计  →  模块8 资料精读
-模块0 LLM基础(浅)   模块7 手撕题             模块6 完整stage路线(成体系刷)
+入场券(必过)        加分项(决定薪资)              锦上添花
+模块1 ReAct         模块3 记忆系统(深)            模块4 框架横向
+模块2 RAG     →     模块9 评测可观测(JD硬要求)  →  模块6 完整stage路线
+模块0 LLM基础(浅)   模块11 工程化(Harness/可靠性) 模块8 资料精读
+                    模块10 MCP / 模块12 安全
+                    模块5 多Agent/系统设计
+                    模块7 手撕题
 ```
+
+> 模块 9-12 是据真实 JD 缺口新增的：评测可观测、MCP、工程化、安全。这些是把"懂原理"升级到"能落地生产"的关键，也是平台架构岗（90-260K）反复要求的能力。
 
 > 每学完一块，回 `ROADMAP.md` 更新自评表；用"主动回忆 + 间隔复习"对抗遗忘。

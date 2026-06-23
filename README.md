@@ -38,11 +38,17 @@ agent_lesson/
 │   ├── 01_react/              ReAct 推理框架（讲义 + 可跑 agent + 自测）
 │   ├── 02_rag/                RAG 两阶段全链路
 │   ├── 03_memory/             mem0 复习讲义
+│   ├── 05_evaluation/         评测与可观测性（三支柱/指标/LLM-as-Judge/trace/badcase 闭环）
+│   ├── 06_mcp/                MCP 协议与工具编排（三原语/三角色/运行时发现）
+│   ├── 07_engineering/        工程化（Harness/状态管理/可靠性/成本性能/多模型路由）
+│   ├── 08_security/           Agent 安全（注入/越狱/沙箱/权限审计/HITL）
 │   ├── curriculum/            stage-1~7 完整路线 + 大型手册 + 源码逐行批注
 │   └── mem0-deep-reading/     mem0 源码精读课
 │
 ├── knowledge/             知识卡片（面试速查）
-│   ├── know_*.md              CQRS / Reranker / Graph / Rolling Summary / Compaction ...
+│   ├── know_*.md              CQRS / Reranker / Graph / Rolling Summary / Compaction /
+│   │                          Evaluation / Observability / MCP / Model Routing /
+│   │                          Cost-Reliability / Agent Security ...
 │   └── frameworks/            各 Agent 框架学习笔记（LangChain/LangGraph/AutoGen/AgentScope/Manus/Cursor...）
 │
 ├── materials/             资料精读（论文 / 源码 / 实践指南）
@@ -58,9 +64,9 @@ agent_lesson/
 |---|---|---|
 | 推理框架 | CoT → ReAct → ToT，**ReAct 要能手写** | `lessons/01_react/`、`drills/01` |
 | Agent 架构 | 记忆（短期/长期/向量/图/反思）、规划、行动 | `lessons/03_memory/`、`knowledge/know_*` |
-| 工具与协议 | Function Calling、MCP 三原语 | `knowledge/frameworks/`、`drills/02` |
-| 系统设计 | RAG 系统、多 Agent、可观测性 | `lessons/02_rag/`、`drills/03` |
-| 安全与评估 | Prompt Injection 防御、HITL、评估体系 | `lessons/curriculum/` |
+| 工具与协议 | Function Calling、MCP 三原语、工具编排 | `lessons/06_mcp/`、`knowledge/know_mcp.md`、`drills/02` |
+| 系统设计 | RAG 系统、多 Agent、工程化（Harness/状态/可靠性/路由） | `lessons/02_rag/`、`lessons/07_engineering/`、`drills/03/06/07` |
+| 安全与评估 | 注入/越狱/沙箱/权限/HITL、评测三支柱与可观测性 | `lessons/08_security/`、`lessons/05_evaluation/`、`drills/05` |
 | LLM 基础 | Token、上下文窗口、采样参数、幻觉 | `lessons/00_llm_basics/` |
 
 ---
