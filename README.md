@@ -17,7 +17,7 @@ flowchart LR
     E -->|遗忘了| C
 ```
 
-1. **先看 [`ROADMAP.md`](./ROADMAP.md)** —— 5 个能力维度 + 学习顺序 + 一张可勾选的就绪度自评表。
+1. **先看 [`ROADMAP.md`](./ROADMAP.md)** —— 5 个能力维度 + 学习顺序 + 一张可勾选的就绪度自评表。完整的模块化课程清单见 [`SYLLABUS.md`](./SYLLABUS.md)。
 2. **把 [`AI_TUTOR_GUIDE.md`](./AI_TUTOR_GUIDE.md) 整段贴给 AI**（Claude / GPT / Kimi / 本地模型皆可），让它按"讲义 → 默写 → 抽题 → 追问"的节奏带你学，而不是直接甩答案。
 3. **跟着 `lessons/` 学**，每学一块就到 `drills/` 手写、到 `examples/` 跑通。
 4. **`knowledge/` 和 `materials/`** 作为速查与精读，配合"主动回忆"做间隔复习。
@@ -30,6 +30,7 @@ flowchart LR
 agent_lesson/
 ├── README.md              ← 你在这
 ├── AI_TUTOR_GUIDE.md      ← 给 AI 的陪练指引（核心）
+├── SYLLABUS.md            ← 课程大纲（模块化全景）
 ├── ROADMAP.md             ← 学习路径 + 能力自评模板
 │
 ├── lessons/               讲义与课程（从零讲起）
